@@ -1,0 +1,10 @@
+
+
+ Run these commands before using the script
+
+ 1)sudo pip install gtts
+
+ 2)sudo apt-get install sox
+
+ 3)sudo apt-get install sox libsox-fmt-all
+
