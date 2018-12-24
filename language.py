@@ -30,7 +30,7 @@ language_full_name=input("Select the language to learn: ")
 
 print(("The language is %s")%(language_full_name))
 print(" ")
-language_to_be_learnt = return_code(language_full_name,language_codes)
+language_to_be_learnt = return_code(language_full_name)
 print("language code is %s"%(language_to_be_learnt))
 print("How do you want to learn today?")
 print(" ")
