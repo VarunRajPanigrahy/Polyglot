@@ -23,12 +23,15 @@ class App(QWidget):
         self.line = QLineEdit("Afrikaans",self)
         self.translate_button = QPushButton(('Click to translate into %s')%(self.line.text()))
         self.translate_button.clicked.connect(self.switch_to_translate)
+
         self.pronun_button = QPushButton("Go to pronunciation section! ",self)
         self.pronun_button.clicked.connect(self.switch_to_pronun)
         self.common_button = QPushButton("Go to common words section! ",self)
         self.common_button.clicked.connect(self.switch_to_common)
         self.quiz_button = QPushButton("Go to the Quiz section!",self)
         self.quiz_button.clicked.connect(self.switch_to_quiz)
+
+
         self.initUI()
  
     def initUI(self):
@@ -68,8 +71,13 @@ class App(QWidget):
         vbox.addWidget(self.translate_button)
 
         vbox.addWidget(self.pronun_button)
+
         vbox.addWidget(self.common_button)
         vbox.addWidget(self.quiz_button)
+
+        
+        
+
         vbox.addStretch(1)
         self.setLayout(vbox)    
 
@@ -90,6 +98,7 @@ class App(QWidget):
        
         self.switch_window.emit(self.line.text(),1)
 
+
     def switch_to_common(self):
         self.switch_window.emit(self.line.text(),2)
 
@@ -106,4 +115,5 @@ class App(QWidget):
 
         
     
- 
+
+
