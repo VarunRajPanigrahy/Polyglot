@@ -34,6 +34,25 @@ def common_words_method(language_full,language):
     print("Finally the words with their translations are- ")
     for i in range(len(eng)):
         print(eng[i],esp[i])
+
+def return_common_words(lang_code):
+    f=open('data.txt','r')
+    random_indices=[]
+    for i in range(5):
+        random_indices.append(random.randint(1,3001))
+    
+    line_number=1
+    eng_to_for = dict()
+
+    for line in f:
+        if(line_number in random_indices):
+            tran = translate_text_to_foreign(line,lang_code)
+            eng_to_for[line] = tran
+        line_number+=1
+
+    return eng_to_for
+
+
         
 
 

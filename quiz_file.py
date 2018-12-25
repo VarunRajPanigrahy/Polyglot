@@ -50,3 +50,16 @@ def quiz(language_full,language):
 
 
 
+def return_questions(lang):
+    random_indices=[]
+    for i in range(10):
+        random_indices.append(random.randint(1,3001))
+    eng_to_for = dict()
+    f=open('data.txt','r')
+    line_number=1
+    for line in f:
+        if(line_number in random_indices):
+            eng_to_for[line] = translate_text_to_foreign(line,lang)
+          
+        line_number+=1
+    return eng_to_for
