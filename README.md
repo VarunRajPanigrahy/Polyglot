@@ -8,3 +8,6 @@ To run the CLI tool, run language.py
 
 Prerequisites-
 Install gtts,PyQt5
+
+PyQt5 is  for the  frontend
+The rest is in python3
