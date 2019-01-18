@@ -13,4 +13,5 @@ PyQt5 is  for the  frontend
 The rest is in python3
 
 sudo pip install gTTS - To install gTTS
+
 sudo apt-get install python3-pyqt5 - To install pyqt5
